@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Scored | Welcome</title>
+    <link rel="icon" th:href="@{icons/favicon.svg}"/>
+    <link rel="stylesheet" th:href="@{css/landingPage.css}"/>
+</head>
+<body>
+<nav>
+    <div>
+        <img
+                th:src="@{icons/favicon.svg}"
+                alt=""
+                th:class="logo"/>
+    </div>
+    <div>
+        <a href="">Register</a>
+        <a th:href="@{/login}">Login</a>
+    </div>
+</nav>
+<main>
+    <section>
+        <div>
+            <div th:insert="fragments/component1ImageHeader :: component1(${image})"></div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
