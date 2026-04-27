@@ -5,12 +5,13 @@
     <title>Scored | Welcome</title>
     <link rel="icon" th:href="@{icons/favicon.svg}"/>
     <link rel="stylesheet" th:href="@{css/landingPage.css}"/>
+    <link rel="stylesheet" th:href="@{css/landing-data.css}"/>
 </head>
 <body>
 <nav>
     <div>
         <img
-                th:src="@{icons/favicon.svg}"
+                th:src="@{icons/iconLogo.png}"
                 alt=""
                 th:class="logo"/>
     </div>
@@ -22,7 +23,52 @@
 <main>
     <section>
         <div>
-            <div th:insert="fragments/component1ImageHeader :: component1(${image})"></div>
+            <div th:insert="fragments/landing-title :: landing-title"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-description :: landing-description"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-data :: landing-data"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-features :: landing-features"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-cities :: landing-cities"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-events :: landing-events"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-monuments :: landing-monuments"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-recomendations :: landing-recomendations"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-crowns :: landing-crowns"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-technologies :: landing-technologies"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-testimonios :: landing-testimonios"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-roadmap :: landing-roadmap"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-faq :: landing-faq"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-contact :: landing-contact"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-cite :: landing-cite"></div>
+        </div>
+        <div>
+            <div th:insert="fragments/landing-future :: landing-future"></div>
         </div>
     </section>
 </main>

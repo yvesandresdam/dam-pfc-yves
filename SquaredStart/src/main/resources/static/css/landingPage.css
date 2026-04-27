@@ -11,13 +11,12 @@ a {
     margin: 0px 20px;
 }
 
-.componente1 {
-    width: 100%;
-    margin: 10px 0;
-}
-
 .logo {
     height: 50px;
     margin: 0px 20px;
     cursor: pointer;
+}
+
+h3 {
+    text-align: center;
 }

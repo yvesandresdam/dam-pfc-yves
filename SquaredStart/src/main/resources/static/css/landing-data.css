@@ -1,0 +1,43 @@
+.landing-data-section {
+    width: 100%;
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+.data-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.data-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 18px;
+    background: #f8fafc;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.data-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+
+.data-number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0f766e;
+    margin-bottom: 15px;
+}
+
+.data-card p {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.6;
+}
