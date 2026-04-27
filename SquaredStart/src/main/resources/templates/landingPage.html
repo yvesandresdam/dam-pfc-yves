@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Scored | Welcome</title>
-    <link rel="icon" th:href="@{icons/favicon.svg}"/>
+    <link rel="icon" th:href="@{icons/scored-logo.svg}"/>
     <link rel="stylesheet" th:href="@{css/landingPage.css}"/>
     <link rel="stylesheet" th:href="@{css/landing-data.css}"/>
+    <link rel="stylesheet" th:href="@{css/landing-faq.css}"/>
+    <link rel="stylesheet" th:href="@{css/landing-cite.css}"/>
+    <link rel="stylesheet" th:href="@{css/landing-contact.css}"/>
+    <link rel="stylesheet" th:href="@{css/landing-testimonios.css}"/>
+    <link rel="stylesheet" th:href="@{css/landing-hero.css}"/>
+    <link rel="stylesheet" th:href="@{css/landing-description.css}"/>
+    <link rel="stylesheet" th:href="@{css/landing-map.css}"/>
+    <link rel="stylesheet" th:href="@{css/landing-features.css}"/>
+    <link rel="stylesheet" th:href="@{css/landing-recomendations.css}"/>
 </head>
 <body>
 <nav>
     <div>
         <img
-                th:src="@{icons/iconLogo.png}"
+                th:src="@{icons/scored-logo.svg}"
                 alt=""
                 th:class="logo"/>
     </div>
@@ -23,7 +32,7 @@
 <main>
     <section>
         <div>
-            <div th:insert="fragments/landing-title :: landing-title"></div>
+            <div th:insert="fragments/landing-hero :: landing-hero"></div>
         </div>
         <div>
             <div th:insert="fragments/landing-description :: landing-description"></div>
@@ -35,13 +44,7 @@
             <div th:insert="fragments/landing-features :: landing-features"></div>
         </div>
         <div>
-            <div th:insert="fragments/landing-cities :: landing-cities"></div>
-        </div>
-        <div>
-            <div th:insert="fragments/landing-events :: landing-events"></div>
-        </div>
-        <div>
-            <div th:insert="fragments/landing-monuments :: landing-monuments"></div>
+            <div th:insert="fragments/landing-map :: landing-map"></div>
         </div>
         <div>
             <div th:insert="fragments/landing-recomendations :: landing-recomendations"></div>
@@ -50,25 +53,16 @@
             <div th:insert="fragments/landing-crowns :: landing-crowns"></div>
         </div>
         <div>
-            <div th:insert="fragments/landing-technologies :: landing-technologies"></div>
-        </div>
-        <div>
             <div th:insert="fragments/landing-testimonios :: landing-testimonios"></div>
-        </div>
-        <div>
-            <div th:insert="fragments/landing-roadmap :: landing-roadmap"></div>
         </div>
         <div>
             <div th:insert="fragments/landing-faq :: landing-faq"></div>
         </div>
         <div>
-            <div th:insert="fragments/landing-contact :: landing-contact"></div>
-        </div>
-        <div>
             <div th:insert="fragments/landing-cite :: landing-cite"></div>
         </div>
         <div>
-            <div th:insert="fragments/landing-future :: landing-future"></div>
+            <div th:insert="fragments/landing-contact :: landing-contact"></div>
         </div>
     </section>
 </main>

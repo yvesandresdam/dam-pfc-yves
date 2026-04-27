@@ -4,7 +4,68 @@
 </head>
 <body>
 <div th:fragment="landing-faq">
-    <h3>Frequently Asked Questions</h3>
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Todo lo que necesitas saber antes de empezar.</p>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Cómo funciona la plataforma?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Nuestra plataforma centraliza herramientas inteligentes para ayudarte
+                    a gestionar procesos, automatizar tareas y mejorar tu productividad.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Necesito experiencia previa?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    No. Está diseñada para ser intuitiva y accesible tanto para principiantes
+                    como para profesionales.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Puedo cancelar cuando quiera?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Sí, puedes cancelar o cambiar tu plan en cualquier momento desde tu panel
+                    de usuario.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Ofrecen soporte?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Sí, contamos con soporte técnico y atención personalizada para resolver
+                    cualquier incidencia.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
 </div>
 </body>
 </html>

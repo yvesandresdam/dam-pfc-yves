@@ -4,7 +4,52 @@
 </head>
 <body>
 <div th:fragment="landing-contact">
-    <h3>Contact Scored</h3>
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h2>Contáctanos</h2>
+                <p>
+                    Nuestra oficina principal está ubicada en Alicante, en el barrio de Juan Pablo II.
+                    Estaremos encantados de atenderte y ayudarte en todo lo que necesites.
+                </p>
+
+                <div class="contact-details">
+                    <div>
+                        <strong>Dirección</strong>
+                        Avenida Juan Pablo II, 47, 03008 Alicante, España
+                    </div>
+
+                    <div>
+                        <strong>Teléfono</strong>
+                        +34 965 123 456
+                    </div>
+
+                    <div>
+                        <strong>Email</strong>
+                        contacto@tuempresa.com
+                    </div>
+
+                    <div>
+                        <strong>Horario</strong>
+                        Lunes a Viernes · 09:00 - 18:00
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Envíanos un mensaje</h3>
+                <form>
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu email" required>
+                    <textarea placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
 </div>
 </body>
 </html>
