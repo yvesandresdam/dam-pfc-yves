@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Scored | Welcome</title>
-    <link rel="icon" th:href="@{icons/scored-logo.svg}"/>
-    <link rel="stylesheet" th:href="@{css/landingPage.css}"/>
-    <link rel="stylesheet" th:href="@{css/landing-data.css}"/>
-    <link rel="stylesheet" th:href="@{css/landing-faq.css}"/>
-    <link rel="stylesheet" th:href="@{css/landing-cite.css}"/>
-    <link rel="stylesheet" th:href="@{css/landing-contact.css}"/>
-    <link rel="stylesheet" th:href="@{css/landing-testimonios.css}"/>
-    <link rel="stylesheet" th:href="@{css/landing-hero.css}"/>
-    <link rel="stylesheet" th:href="@{css/landing-description.css}"/>
-    <link rel="stylesheet" th:href="@{css/landing-map.css}"/>
-    <link rel="stylesheet" th:href="@{css/landing-features.css}"/>
-    <link rel="stylesheet" th:href="@{css/landing-recomendations.css}"/>
+    <link rel="icon" th:href="@{/icons/scored-logo.svg}"/>
+    <link rel="stylesheet" th:href="@{/css/landingPage.css}"/>
+    <link rel="stylesheet" th:href="@{/css/landing-data.css}"/>
+    <link rel="stylesheet" th:href="@{/css/landing-faq.css}"/>
+    <link rel="stylesheet" th:href="@{/css/landing-cite.css}"/>
+    <link rel="stylesheet" th:href="@{/css/landing-contact.css}"/>
+    <link rel="stylesheet" th:href="@{/css/landing-testimonios.css}"/>
+    <link rel="stylesheet" th:href="@{/css/landing-hero.css}"/>
+    <link rel="stylesheet" th:href="@{/css/landing-description.css}"/>
+    <link rel="stylesheet" th:href="@{/css/landing-map.css}"/>
+    <link rel="stylesheet" th:href="@{/css/landing-features.css}"/>
+    <link rel="stylesheet" th:href="@{/css/landing-recomendations.css}"/>
 </head>
 <body>
 <nav>
     <div>
         <img
-                th:src="@{icons/scored-logo.svg}"
+                th:src="@{/icons/scored-logo.svg}"
                 alt=""
                 th:class="logo"/>
     </div>
-    <div>
-        <a href="">Register</a>
-        <a th:href="@{/login}">Login</a>
+    <div class="nav-actions">
+        <a class="btn btn-register" href="">Register</a>
+        <a class="btn btn-login" th:href="@{/login}">Login</a>
     </div>
 </nav>
 <main>

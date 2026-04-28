@@ -34,18 +34,27 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
+                        // Permitir acceso a la página de landing
                         .requestMatchers("/").permitAll()
+                        .requestMatchers("/welcome").permitAll()
                         .requestMatchers("/login").permitAll()
+                        // Permitir recursos estáticos (CSS, imágenes, iconos, etc.)
+                        .requestMatchers("/css/**").permitAll()
+                        .requestMatchers("/icons/**").permitAll()
+                        .requestMatchers("/png/**").permitAll()
+                        .requestMatchers("/js/**").permitAll()
+                        .requestMatchers("/webjars/**").permitAll()
+                        .requestMatchers("/favicon.ico").permitAll()
                         .anyRequest().authenticated()
-                )
+                );
 
                 //Formulario de login por defecto
-                .formLogin(form -> form
-                        .loginPage("/login")
-                        .loginProcessingUrl("/login")
-                        .defaultSuccessUrl("/dashboard", true)
-                        .permitAll()
-                );
+//                .formLogin(form -> form
+//                        .loginPage("/login")
+//                        .loginProcessingUrl("/login")
+//                        .defaultSuccessUrl("/dashboard", true)
+//                        .permitAll()
+//                );
 
         return http.build();
     }

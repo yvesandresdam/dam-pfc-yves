@@ -17,6 +17,44 @@ a {
     cursor: pointer;
 }
 
+/* Botones en la barra de navegación */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+/* Register: estilo secundario */
+.btn-register {
+    background: transparent;
+    color: #111827;
+    border-color: rgba(0,0,0,0.08);
+}
+
+/* Login: estilo principal que resalta con los colores del sitio */
+.btn-login {
+    background: linear-gradient(180deg, #ffd54a 0%, #fbbf24 100%);
+    color: #111827;
+    box-shadow: 0 6px 18px rgba(251,191,36,0.18);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(17,24,39,0.08);
+}
+
 h3 {
     text-align: center;
 }
