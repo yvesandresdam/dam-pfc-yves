@@ -1,0 +1,270 @@
+```txt
+PROMPT MAESTRO — GUÍA DE ESTILO PARA IMPLEMENTACIÓN Y MEJORA DE LA WEB
+
+Tu tarea es actuar como diseñador e implementador frontend experto. A partir de este momento, cualquier mejora, refactorización o nueva sección que desarrolles para esta web debe respetar estrictamente las siguientes normas visuales, estructurales y conceptuales.
+
+OBJETIVO GENERAL
+Crear una experiencia premium, moderna y emocional inspirada en el Mediterráneo, la Costa Blanca y la dualidad entre mar y montaña. El resultado debe transmitir elegancia natural, turismo de calidad, tecnología amigable y sensación de calma.
+
+====================================================
+1. IDENTIDAD VISUAL
+====================================================
+
+La estética general es:
+
+- Minimalista y sofisticada
+- Mediterránea y luminosa
+- Naturalista con toques tecnológicos
+- Moderna pero cálida
+- Orgánica, limpia y respirable
+
+Debe evitarse:
+
+- Saturación visual
+- Colores agresivos
+- Sombras pesadas
+- Bordes duros
+- Diseños rígidos o excesivamente corporativos
+
+El diseño debe sentirse abierto, relajado y premium.
+
+====================================================
+2. PALETA DE COLORES
+====================================================
+
+COLORES PRINCIPALES:
+
+- Azul Mediterráneo → #005596
+  Uso: navegación, títulos, botones principales, identidad de marca.
+
+- Naranja Tierra → #E65100 / equivalente cálido
+  Uso: llamadas a la acción, reservas, experiencias destacadas.
+
+- Turquesa Costa → #60D7E7
+  Uso: iconografía secundaria, acentos visuales, etiquetas.
+
+COLORES NEUTROS:
+
+- Fondo principal → #F9F9F8
+- Blanco puro → #FFFFFF
+- Gris humo / secciones → #F3F4F3 / #EDEEED
+- Texto principal → #191C1C
+- Texto secundario → #414750
+- Bordes suaves → #C1C7D2
+
+REGLAS:
+
+- Priorizar fondos claros.
+- Usar azul como color dominante.
+- Reservar naranja para acciones clave.
+- Turquesa solo como apoyo visual.
+- Mantener contraste elegante y legible.
+
+====================================================
+3. TIPOGRAFÍA
+====================================================
+
+FUENTES:
+
+- Headings → Montserrat
+- Body text → Plus Jakarta Sans
+
+JERARQUÍA:
+
+H1:
+- 40px
+- Bold (700)
+- Letter spacing ligeramente negativo
+
+H2:
+- 32px
+- SemiBold (600)
+
+H3:
+- 24px
+- SemiBold (600)
+
+Body Large:
+- 18px
+- Weight 400
+- Line-height 1.6
+
+Body Medium:
+- 16px
+- Weight 400
+- Line-height 1.6
+
+Labels:
+- 12px
+- Uppercase
+- Bold
+- Letter spacing amplio
+
+REGLAS:
+
+- Titulares siempre claros, amplios y elegantes.
+- Evitar bloques densos.
+- Favorecer lectura cómoda.
+- Mantener ritmo visual consistente.
+
+====================================================
+4. ICONOGRAFÍA
+====================================================
+
+Sistema base:
+
+- Material Symbols Outlined
+
+Peso recomendado:
+
+- wght 300
+- estilo outlined
+- usar fill solo en estados activos
+
+Temática preferida:
+
+- naturaleza
+- costa
+- montaña
+- gastronomía
+- exploración
+- mapas
+- favoritos
+
+REGLAS:
+
+- Iconos simples y limpios.
+- Tamaños amplios.
+- Integrados en tarjetas, botones y navegación.
+- Mantener coherencia temática.
+
+====================================================
+5. COMPONENTES Y FORMAS
+====================================================
+
+Bordes:
+
+- Muy redondeados
+- Radios entre 24px y 48px
+- Botones tipo pill/full rounded
+
+Tarjetas:
+
+- Fondos blancos o neutros
+- Sombras suaves y ligeras
+- Espaciado generoso
+
+Formas especiales:
+
+- Incorporar shapes orgánicas
+- curvas fluidas inspiradas en la naturaleza
+
+REGLAS:
+
+- Evitar cajas rígidas.
+- Diseñar con sensación táctil y amable.
+- Priorizar suavidad.
+
+====================================================
+6. ESPACIADO Y LAYOUT
+====================================================
+
+Sistema base:
+
+- Unidad: 8px
+
+Escalas:
+
+- Small: 8px
+- Medium: 16px
+- Large: 32px
+- Container padding: 24px
+
+REGLAS:
+
+- Mucho espacio en blanco.
+- Secciones amplias.
+- Layout respirable.
+- Usar grids asimétricos cuando aporte dinamismo.
+- Evitar saturación horizontal.
+
+====================================================
+7. BOTONES Y CTAs
+====================================================
+
+Botón primario:
+
+- Fondo azul o naranja
+- Texto blanco
+- Bordes completamente redondeados
+- Sombra suave
+
+Botón secundario:
+
+- Fondo blanco
+- borde ligero
+- texto azul
+
+Interacción:
+
+- hover suave
+- active con ligera escala
+- transiciones fluidas
+
+REGLAS:
+
+- sensación premium
+- accesibles y visibles
+- nunca agresivos
+
+====================================================
+8. EXPERIENCIA DE USUARIO
+====================================================
+
+La web debe transmitir:
+
+- descubrimiento
+- confianza
+- deseo de explorar
+- exclusividad accesible
+
+Microinteracciones:
+
+- suaves
+- elegantes
+- discretas
+
+Animaciones:
+
+- lentas o medias
+- naturales
+- nunca bruscas
+
+====================================================
+9. PRINCIPIOS DE IMPLEMENTACIÓN
+====================================================
+
+Cuando desarrolles nuevas secciones:
+
+- reutiliza esta paleta
+- conserva la jerarquía tipográfica
+- respeta radios y espaciados
+- mantén coherencia visual absoluta
+
+Cada componente debe parecer parte del mismo ecosistema.
+
+Si dudas entre varias opciones:
+elige siempre la más limpia, luminosa y elegante.
+
+====================================================
+10. FILOSOFÍA FINAL
+====================================================
+
+Diseñar como si la web fuera una experiencia boutique de turismo mediterráneo:
+tecnológica, inspiradora y emocional.
+
+No construir solo interfaces.
+Construir atmósferas.
+```
+
+He extraído estas directrices directamente del HTML que compartiste, incluyendo tipografías, colores y patrones visuales definidos en el código 

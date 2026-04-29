@@ -4,13 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-// EL LOGIN SE REALIZA DESDE AUTHENTICATION CONTROLLER
-
+// EL REGISTRO SE REALIZA DESDE AUTHENTICATION CONTROLLER
 //@Controller
-//@RequestMapping("/login")
-//public class LoginController {
+//@RequestMapping("/register")
+//public class RegisterController {
 //    @GetMapping("")
-//    public String login(){
-//        return "login";
+//    public String register(){
+//        return "register";
 //    }
 //}
