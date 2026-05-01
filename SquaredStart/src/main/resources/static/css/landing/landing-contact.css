@@ -53,6 +53,7 @@
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    font-family: Arial, sans-serif;
 }
 
 .contact-form h3 {
@@ -75,6 +76,7 @@
 .contact-form textarea {
     min-height: 140px;
     resize: vertical;
+    font-family: Arial, sans-serif;
 }
 
 .contact-form button {

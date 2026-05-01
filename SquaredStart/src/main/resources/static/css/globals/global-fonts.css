@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'GFSDidot';
+    src: url('../../fonts/GFSDidot-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Buda';
+    src: url('../../fonts/Buda-Light.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InstrumentSerif';
+    src: url('../../fonts/InstrumentSerif-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oranienbaum';
+    src: url('../../fonts/Oranienbaum-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ysabeau';
+    src: url('../../fonts/Ysabeau-VariableFont_wght.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YsabeauOffice';
+    src: url('../../fonts/YsabeauOffice-VariableFont_wght.ttf');
+    font-weight: 400;
+    font-style: normal;
+}

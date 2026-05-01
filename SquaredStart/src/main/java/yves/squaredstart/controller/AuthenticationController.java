@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class AuthenticationController {
-
     private final UserDetailsService userDetailsService;
     private final PasswordEncoder passwordEncoder;
 
@@ -31,11 +30,6 @@ public class AuthenticationController {
             model.addAttribute("errorMessage", "Credenciales incorrectas, vuelve a intentarlo.");
         }
         return "login";
-    }
-
-    @GetMapping("/register")
-    public String registerForm() {
-        return "register";
     }
 
     @PostMapping("/login")
@@ -54,6 +48,11 @@ public class AuthenticationController {
         } catch (UsernameNotFoundException ignored) {
         }
         return "redirect:/login?error=true";
+    }
+
+    @GetMapping("/register")
+    public String registerForm() {
+        return "register";
     }
 }
 
