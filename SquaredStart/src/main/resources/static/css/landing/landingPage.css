@@ -17,12 +17,25 @@
     --space-lg: 32px;
 }
 
+/* Universal reset for box-sizing */
+* {
+    box-sizing: border-box;
+}
+
 /* Base typography */
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 html, body {
     font-family: 'Plus Jakarta Sans', Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
     margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -36,6 +49,24 @@ h1, h2, h3, h4 {
 h1 { font-size: 40px; font-weight:700; letter-spacing: -0.5px; }
 h2 { font-size: 32px; font-weight:600; }
 h3 { font-size: 24px; font-weight:600; }
+
+/* Main layout constraints */
+main {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main > section {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main > section > div {
+    width: 100%;
+    overflow-x: hidden;
+}
 
 /* Navigation */
 nav {

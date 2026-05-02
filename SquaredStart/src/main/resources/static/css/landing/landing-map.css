@@ -63,9 +63,33 @@
 @media (max-width: 900px) {
     .map-feature-container {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .map-feature-text {
         text-align: center;
+    }
+
+    .map-feature-section {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .map-feature-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .map-feature-section {
+        padding: 60px 16px;
+    }
+
+    .map-feature-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .map-feature-text p {
+        font-size: 1rem;
     }
 }

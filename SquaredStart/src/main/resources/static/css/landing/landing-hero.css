@@ -36,7 +36,6 @@
     line-height: 1.15;
     font-weight: 700;
     margin-bottom: 18px;
-    font-family: 'Montserrat', sans-serif;
     color: var(--color-white);
 }
 
@@ -51,6 +50,57 @@
     margin: 0 auto 28px auto;
     color: rgba(255,255,255,0.92);
 }
+
+
+.hero-description1 {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 28px auto;
+    color: rgba(255,255,255,0.92);
+    font-family: 'Buda';
+}
+
+
+.hero-description2 {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 28px auto;
+    color: rgba(255,255,255,0.92);
+    font-family: 'InstrumentSerif';
+}
+
+
+.hero-description3 {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 28px auto;
+    color: rgba(255,255,255,0.92);
+    font-family: 'Oranienbaum';
+}
+
+
+.hero-description4 {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 28px auto;
+    color: rgba(255,255,255,0.92);
+    font-family: 'Ysabeau';
+}
+
+
+.hero-description5 {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 28px auto;
+    color: rgba(255,255,255,0.92);
+    font-family: 'GFSDidot';
+}
+
 
 .hero-button {
     display: inline-block;

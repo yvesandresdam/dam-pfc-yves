@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f7fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(17, 24, 39, 0.06);
+    width: 380px;
+}
+
+.card h2 {
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+.card label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.card input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #e6e9ef;
+    box-sizing: border-box;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: var(--color-button-primary-gradient);
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.muted {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+#backlink {
+    width: 380px;
+    text-align: center;
+    padding: 28px;
+    font-family: 'InstrumentSerif';
+    font-size: var(--font-size-medium);
+}

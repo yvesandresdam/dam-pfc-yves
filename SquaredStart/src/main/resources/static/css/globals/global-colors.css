@@ -2,6 +2,31 @@
     --color-primary: #005596;
     --color-accent: #E65100;
     --color-turquoise: #60D7E7;
+    --color-gradient-linear-blue: linear-gradient(90deg, #60D7E7 0%, #3FE0C5 100%);
+    --color-gradient-ocean-energy: linear-gradient(
+            330deg,
+            #005596 0%,
+            #2A8FC7 15%,
+            #60D7E7 58%,
+            #7BE6DA 88%,
+            rgba(255, 142, 84, 0.5) 100%
+    );
+    --color-gradient-ocean-energy-reverse: linear-gradient(
+            120deg,
+            #005596 0%,
+            #2A8FC7 15%,
+            #60D7E7 58%,
+            #7BE6DA 88%,
+            rgba(255, 142, 84, 0.5) 100%
+    );
+
+    --color-button-primary: #60D7E7;
+    --color-button-primary-gradient: linear-gradient(90deg, #60D7E7 0%, #3FE0C5 100%);
+
     --bg: #F9F9F8;
     --white: #FFFFFF;
+
+    --font-size-top: 20pt;
+    --font-size-medium: 15pt;
+    --font-size-regular: 12pt;
 }

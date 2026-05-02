@@ -4,8 +4,10 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iniciar sesión | Scored</title>
-    <link rel="stylesheet" th:href="@{/css/landing/landingPage.css}" />
+    <link rel="icon" th:href="@{/icons/scored-logo.svg}"/>
     <link rel="stylesheet" th:href="@{/css/login.css}" />
+    <link rel="stylesheet" th:href="@{/css/globals/global-colors.css}"/>
+    <link rel="stylesheet" th:href="@{/css/globals/global-fonts.css}"/>
 </head>
 <body>
 <div class="login-container">
@@ -24,7 +26,7 @@
         <div class="form-wrapper">
             <header class="form-header">
                 <h2>Inicia sesión</h2>
-                <p>Accede a tu panel para gestionar favoritos y promociones.</p>
+                <p>Accede a tu panel para gestionar tus eventos favoritos y tus aventuras.</p>
             </header>
 
             <form th:action="@{/login}" method="post" class="form-card" autocomplete="off">
@@ -43,6 +45,7 @@
                 <div class="form-actions">
                     <button type="submit" class="btn btn-primary">Iniciar sesión</button>
                     <a th:href="@{/register}" class="btn btn-secondary">Crear cuenta</a>
+                    <a th:href="@{/plans}" class="btn btn-secondary">Suscripciones</a>
                 </div>
             </form>
 

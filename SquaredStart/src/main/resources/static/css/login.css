@@ -16,14 +16,29 @@
 }
 
 /* Reset / base */
-html,body{height:100%;}
-body{
-	margin:0;
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+html {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
 	font-family: 'GFSDidot';
 	background: var(--bg);
 	color: var(--text);
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .login-container{
@@ -36,7 +51,7 @@ body{
 .brand-panel{
 	width:18%;
 	min-width:360px;
-	background: linear-gradient(180deg, var(--color-primary) 0%, #003d7a 100%);
+	background: var(--color-gradient-ocean-energy);
 	color: #fff;
 	display:flex;
 	align-items:center;
@@ -85,7 +100,7 @@ body{
 }
 .form-control:focus{outline:none;box-shadow:0 6px 18px rgba(0,85,150,0.08);border-color:var(--color-primary)}
 
-.form-actions{display:flex;gap:12px;align-items:center;margin-top:8px}
+.form-actions{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-top:8px}
 .btn{display:inline-block;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;border:0;cursor:pointer}
 .btn-primary{background:linear-gradient(180deg,var(--color-accent) 0%, #cf4a00 100%);color:#fff;box-shadow:0 6px 16px rgba(230,81,0,0.18)}
 .btn-secondary{background:transparent;color:var(--color-primary);border:1px solid rgba(0,85,150,0.12);padding:10px 16px}

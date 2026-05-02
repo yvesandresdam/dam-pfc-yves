@@ -82,13 +82,38 @@
 
 @media (max-width: 900px) {
     .events-cultural-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
+        gap: 18px;
     }
 
     .item1, .item2, .item3,
     .item4, .item5, .item6, .item7 {
         grid-column: auto;
         grid-row: auto;
+    }
+
+    .events-cultural-section {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .events-cultural-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 16px;
+    }
+
+    .events-cultural-section {
+        padding: 60px 16px;
+    }
+
+    .card-text {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
     }
 }

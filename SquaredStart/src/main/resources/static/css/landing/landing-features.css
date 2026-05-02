@@ -63,6 +63,30 @@
 
 @media (max-width: 900px) {
     .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .features-section {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .features-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .features-section {
+        padding: 60px 16px;
+    }
+
+    .features-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .feature-card {
+        padding: 25px 18px;
     }
 }
