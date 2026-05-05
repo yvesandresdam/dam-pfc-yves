@@ -1,7 +1,7 @@
 .contact-section {
     padding: 100px 20px;
-    background: #ffffff;
-    font-family: Arial, sans-serif;
+    background: var(--bg);
+    font-family: inherit;
 }
 
 .contact-container {
@@ -14,20 +14,20 @@
 }
 
 .contact-info {
-    background: #f9fafb;
+    background: var(--card-bg);
     padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border-radius: calc(var(--radius-lg) / 1.5);
+    box-shadow: 0 10px 30px rgba(17,24,39,0.04);
 }
 
 .contact-info h2 {
     font-size: 2.2rem;
     margin-bottom: 20px;
-    color: #111827;
+    color: var(--text);
 }
 
 .contact-info p {
-    color: #4b5563;
+    color: var(--muted);
     line-height: 1.7;
     margin-bottom: 15px;
 }
@@ -39,7 +39,7 @@
 .contact-details div {
     margin-bottom: 18px;
     font-size: 1rem;
-    color: #1f2937;
+    color: var(--text);
 }
 
 .contact-details strong {
@@ -49,17 +49,16 @@
 }
 
 .contact-form {
-    background: #ffffff;
+    background: var(--card-bg);
     padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-    font-family: Arial, sans-serif;
+    border-radius: calc(var(--radius-lg) / 1.5);
+    box-shadow: 0 10px 30px rgba(17,24,39,0.04);
 }
 
 .contact-form h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #111827;
+    color: var(--text);
 }
 
 .contact-form input,
@@ -67,7 +66,7 @@
     width: 100%;
     padding: 14px 16px;
     margin-bottom: 18px;
-    border: 1px solid #d1d5db;
+    border: 1px solid var(--border);
     border-radius: 12px;
     font-size: 1rem;
     outline: none;
@@ -76,12 +75,11 @@
 .contact-form textarea {
     min-height: 140px;
     resize: vertical;
-    font-family: Arial, sans-serif;
 }
 
 .contact-form button {
-    background: #111827;
-    color: white;
+    background: var(--color-primary);
+    color: var(--white);
     border: none;
     padding: 14px 24px;
     border-radius: 12px;

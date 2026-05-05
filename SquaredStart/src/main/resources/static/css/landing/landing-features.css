@@ -1,7 +1,7 @@
 .features-section {
     padding: 100px 20px;
-    background: #ffffff;
-    font-family: Arial, sans-serif;
+    background: var(--bg);
+    font-family: inherit;
 }
 
 .features-container {
@@ -16,13 +16,13 @@
 
 .features-header h2 {
     font-size: 2.5rem;
-    color: #111827;
+    color: var(--text);
     margin-bottom: 15px;
 }
 
 .features-header p {
     font-size: 1.1rem;
-    color: #6b7280;
+    color: var(--muted);
 }
 
 .features-grid {
@@ -32,10 +32,10 @@
 }
 
 .feature-card {
-    background: #f9fafb;
-    border-radius: 20px;
+    background: var(--card-bg);
+    border-radius: calc(var(--radius-lg) / 1.5);
     padding: 35px 25px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 28px rgba(17,24,39,0.04);
     transition: transform 0.3s ease;
 }
 
@@ -50,13 +50,13 @@
 
 .feature-title {
     font-size: 1.3rem;
-    color: #111827;
+    color: var(--text);
     margin-bottom: 12px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .feature-text {
-    color: #4b5563;
+    color: var(--muted);
     line-height: 1.7;
     font-size: 1rem;
 }

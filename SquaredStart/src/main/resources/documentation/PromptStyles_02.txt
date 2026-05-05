@@ -1,0 +1,52 @@
+SUGERENCIAS Y MEJORAS PARA PromptStyles_01
+
+Este documento recoge propuestas de mejora y observaciones para la guía original `PromptStyles_01_MD.md`.
+
+1) Tokens y diseño del sistema de diseño
+- Definir unidades en rem en vez de px para mejorar accesibilidad y escalado.
+- Añadir variables para z-index comunes (z-modal, z-dropdown).
+- Centralizar sombras con tokens (e.g., --shadow-sm, --shadow-md, --shadow-lg).
+
+2) Accesibilidad
+- Asegurar contraste mínimo 4.5:1 para textos y botones. Revisar el amarillo/orange sobre blanco.
+- Incluir focus styles claros (outline con color del tema) para navegabilidad por teclado.
+- Declarar tamaños de hit target mínimo 44x44 px para botones y controles.
+
+3) Tipografías
+- Sugerir carga local/de fallback para evitar FOIT/FOUT en producción.
+- Usar variables para pesos (e.g., --fw-regular, --fw-medium, --fw-bold) y tamaños (--fs-base, --fs-lg).
+
+4) Modo responsive y escala
+- Definir breakpoints (sm/md/lg/xl) como variables y usarlos consistentemente.
+- Recomiendo usar un sistema modular (8px) en rems (0.5rem, 1rem, 2rem) para coherencia.
+
+5) Componentización
+- Extraer componentes comunes: Button, Card, Input, Badge, Grid.
+- Documentar props y estados (hover, active, disabled) en un README de componentes.
+
+6) Tokens de color extendidos
+- Añadir variantes (primary-600, primary-400) para estados hover/active.
+- Definir color-success, color-warning, color-danger para mensajes y estados.
+
+7) Animaciones y performance
+- Definir tokens de transición (duration, easing) y usarlos globalmente.
+- Evitar grandes imágenes en hero; usar técnicas de lazy-loading y formatos modernos (webp/avif).
+
+8) Temas y modo oscuro
+- Preparar variables alternativas para modo oscuro (background oscuro, texto claro).
+- Razonar sobre inversión de los acentos para mantener contraste en oscuro.
+
+9) Testing visual
+- Añadir snapshot visual o storybook para validar cambios visuales en componentes clave.
+
+10) Documentación y gobernanza
+- Mantener este PromptStyles_01 como norma, pero versionarlo (v1, v2) y documentar cambios en un changelog.
+
+Implementación práctica sugerida
+- Refactorizar CSS en un archivo base _theme.css con tokens y otro _components.css con botones/formularios.
+- Migrar estilos específicos de cada fragmento para usar clases atómicas/componetizadas reduciendo duplicación.
+
+Notas finales
+- Ninguna de estas sugerencias modifica el documento original; son complementarias para fortalecer diseño, accesibilidad y mantenibilidad.
+- Puedo aplicar estas mejoras automáticamente (migración de px a rem, crear tokens de sombra, breakpoints, etc.) si quieres que lo haga.
+

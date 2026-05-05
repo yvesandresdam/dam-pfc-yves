@@ -1,7 +1,7 @@
 .events-cultural-section {
     padding: 100px 20px;
-    background: #ffffff;
-    font-family: Arial, sans-serif;
+    background: var(--bg);
+    font-family: inherit;
 }
 
 .events-cultural-container {
@@ -14,10 +14,10 @@
 }
 
 .card {
-    border-radius: 20px;
+    border-radius: calc(var(--radius-lg) / 1.5);
     overflow: hidden;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-    background: #f9fafb;
+    box-shadow: 0 12px 30px rgba(17,24,39,0.04);
+    background: var(--card-bg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,16 +32,16 @@
 
 .card-text {
     padding: 30px;
-    color: #4b5563;
+    color: var(--muted);
     line-height: 1.7;
     font-size: 1.05rem;
 }
 
 .card-title {
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 12px;
-    color: #111827;
+    color: var(--text);
 }
 
 /* Layout positioning */
