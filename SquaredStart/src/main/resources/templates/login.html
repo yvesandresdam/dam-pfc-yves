@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión | Scored</title>
+    <link rel="icon" th:href="@{/icons/scored-logo.svg}"/>
+    <link rel="stylesheet" th:href="@{/css/login.css}" />
+    <link rel="stylesheet" th:href="@{/css/globals/global-colors.css}"/>
+    <link rel="stylesheet" th:href="@{/css/globals/global-fonts.css}"/>
+</head>
+<body>
+<div class="login-container">
+    <aside class="brand-panel" aria-hidden="true">
+        <div class="brand-inner">
+            <div class="brand-logo">
+                <img th:src="@{/icons/scored-logo.svg}" alt="Scored" />
+            </div>
+            <h1 class="brand-title">Scored</h1>
+            <p class="brand-sub">Alicante — Turismo inteligente</p>
+            <p class="brand-note">Descubre experiencias, mapas y eventos locales.</p>
+        </div>
+    </aside>
+
+    <main class="form-panel">
+        <div class="form-wrapper">
+            <header class="form-header">
+                <h2>Inicia sesión</h2>
+                <p>Accede a tu panel para gestionar tus eventos favoritos y tus aventuras.</p>
+            </header>
+
+            <form th:action="@{/login}" method="post" class="form-card" autocomplete="off">
+                <div th:if="${errorMessage}" class="error-message" th:text="${errorMessage}"></div>
+
+                <div class="form-group">
+                    <label for="username">Usuario</label>
+                    <input id="username" name="username" type="text" class="form-control" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input id="password" name="password" type="password" class="form-control" required />
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                    <a th:href="@{/register}" class="btn btn-secondary">Crear cuenta</a>
+                    <a th:href="@{/plans}" class="btn btn-secondary">Suscripciones</a>
+                </div>
+            </form>
+
+            <footer class="form-footer">
+                <a th:href="@{/welcome}">Volver a la página principal</a>
+            </footer>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
